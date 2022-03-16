@@ -1,0 +1,36 @@
+{
+  "name": "robots-txt-validator",
+  "version": "0.0.3",
+  "description": "Lightweight robots.txt parsing component without any external dependencies for Node.js.",
+  "main": "src/component.js",
+  "scripts": {
+    "test": "mocha --exit --timeout=600000 tests/main.test.js",
+    "tests": "mocha --exit --timeout=600000 tests/main.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buithaibinh/robots-txt-validator"
+  },
+  "keywords": [
+    "robots.txt",
+    "robots",
+    "robots-parser",
+    "robots-exclusion-standard",
+    "javascript",
+    "js",
+    "node-js",
+    "robots-txt",
+    "crawler",
+    "crawlers"
+  ],
+  "author": "Binh Bui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buithaibinh/robots-txt-validator/issues"
+  },
+  "homepage": "https://github.com/buithaibinh/robots-txt-validator",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
