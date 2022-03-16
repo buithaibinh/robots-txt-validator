@@ -26,6 +26,7 @@ async function makeRequest(handler, link) {
             }
 
             if (res.statusCode !== 200) {
+                console.log(`[error] ${res.statusCode}`);
                 resolve(null);
             }
 
@@ -55,7 +56,9 @@ module.exports = async (link) => {
         return response;
     }
 
-    let rawContent = null;
+    // default robots.txt
+    let rawContent = `User-agent: *
+Allow: /`;
     if (response !== null && typeof response === 'object') {
         if (response.redirection === true) {
             link = response.location;
